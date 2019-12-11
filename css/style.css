@@ -3,6 +3,7 @@ body {
   line-height: 1.7;
   color: gray;
   font-weight: 300;
+  overflow-x:hidden;
   font-size: 1.1rem; }
 
 ::-moz-selection {
@@ -27,10 +28,11 @@ body {
   .special-section .carousel-section{
     margin-top: -13rem;
     padding:5%;
-    margin-left: 5%;
-    width: 90%!important;
   }
-
+  #achievements-section .img-fluid{
+    height: 300px;
+    width: 100%;
+  }
 
   .special-section img{
     height: 250px;
@@ -40,19 +42,23 @@ body {
     margin-bottom: 2rem;
   }
   .head-section img{
-    height: 330px!important;
+    height: 400px!important;
   }
   .head-section{
-    padding-top: 8rem;
+    padding-top: 5rem;
   }
   .footer-section{
     margin-top: -13%!important;
     color: white;
+    padding-bottom: 0px;
   }
   .footer-section .row h3{
     color: white;
   }
-
+  .footer-section .group-section{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
@@ -339,8 +345,8 @@ h1, h2, h3, h4, h5,
 /* Navbar */
 .site-logo {
   position: relative;
-  font-weight: 900;
-  font-size: 1.3rem; }
+  font-weight: 600;
+  font-size: 1rem!important; }
   .site-logo a {
     color: #fff; }
 
@@ -637,7 +643,8 @@ h1, h2, h3, h4, h5,
     box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
     background: #fff; }
     .sticky-wrapper .site-navbar .site-logo a {
-      font-size: 1rem;
+      font-weight: 800;
+      font-size: 15px;
       margin-right:10px;
       color: #000; }
     .sticky-wrapper .site-navbar .site-menu > li {
@@ -687,22 +694,29 @@ h1, h2, h3, h4, h5,
     box-shadow: 0 10px 50px -5px rgba(0, 0, 0, 0.4); }
     @media (max-width: 991.98px) {
       .img-absolute img {
-        max-width: 100%; } }
+        max-width: 100%; }
+        .sticky-wrapper .site-navbar .site-logo a {
+          font-weight: 800;
+          font-size: 10px;
+          margin-right:10px;
+          color: #000; } }
 
 .slide-1 {
   background-size: cover;
   background-position: center; }
-  .slide-1:before {
-    content: "";
+  /* .slide-1:before {
+    content: " ";
     position: absolute;
-    height: 100%;
+    height: auto;
     width: 100%;
     background: #343a40;
     opacity: .9;
-    border-bottom-right-radius: 0px; }
+    border-bottom-right-radius: 0px; } */
     @media (max-width: 991.98px) {
       .slide-1:before {
-        width: 100%; } }
+        overflow-x: hidden;
+        width: 100%; 
+      } }
   .slide-1 .slide-text {
     opacity: 0;
     visibility: hidden;
@@ -912,7 +926,7 @@ h1, h2, h3, h4, h5,
       background-color: #7971ea; }
 
 .footer-section {
-  padding: 7em 0;
+  padding: 0em 0;
   background-color: #fafafa; }
   .footer-section p {
     font-size: 1rem; }
@@ -1115,6 +1129,7 @@ h1, h2, h3, h4, h5,
 .teacher {
   border: 1px solid #e9ecef;
   padding: 30px;
+  height: 80%;
   margin-bottom: 5rem; }
   .teacher img {
     position: relative;
