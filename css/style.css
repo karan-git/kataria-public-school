@@ -43,7 +43,7 @@ body {
     margin-bottom: 2rem;
   }
   .head-section img{
-    height: 250px!important;
+    height: 300px!important;
   }
   .head-section{
     padding-top: 10%;
@@ -1058,7 +1058,7 @@ h1, h2, h3, h4, h5,
 .courses-title {
   /* width: 96%;
   margin-left:2%; */
-  margin-top: -8rem;
+  margin-top: -5rem;
   padding-bottom: 5rem;
   background: #7971ea; }
   .courses-title .section-title {
