@@ -6,6 +6,15 @@ body {
   font-size: 0.8rem; }
   
   
+.whatsappicon{
+  text-align: right;
+  z-index: 1000;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+}
+
+
 ::-moz-selection {
   background: #000;
   color: #fff; }

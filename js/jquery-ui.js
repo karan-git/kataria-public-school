@@ -20,6 +20,14 @@ $.ui = $.ui || {};
 var version = $.ui.version = "1.12.1";
 
 
+
+$("a").mouseup(function() {
+	$("#admission").click(function(ev){
+		ev.preventDefault();
+		window.location.href= "https://ezyschooling.com/";
+	})
+  });
+
 /*!
  * jQuery UI Widget 1.12.1
  * http://jqueryui.com
@@ -58,7 +66,6 @@ $.cleanData = ( function( orig ) {
 		orig( elems );
 	};
 } )( $.cleanData );
-
 $.widget = function( name, base, prototype ) {
 	var existingConstructor, constructor, basePrototype;
 
